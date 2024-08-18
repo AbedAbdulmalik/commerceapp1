@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "heroku-postbuild": "cd frontend && npm install && npm run build",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
